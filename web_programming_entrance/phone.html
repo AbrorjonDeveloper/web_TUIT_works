@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Shop Store</title>
+    <style>
+        td{
+            text-align:center;
+
+        }
+        #table{
+            /* border:2px solid #000000; */
+            border: none;
+            width: 50%;
+            height: 100px;
+            text-align:left;
+        }
+        #Logo{
+            width: 17%;
+        }
+        #marque {
+            height: 60px;
+            font-size:large;
+        }
+        .navbar-link{
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+        .navbar-link:hover{
+            font-size:large;
+            text-decoration:none;
+        }
+        /* .link-img{
+            /* width: 155px;
+            height: 155px; 
+            width:140px;
+        } */
+        .card {
+            background-color:rgb(139, 160, 137);
+        }
+        .input-area{
+            padding: 0 10px;
+            margin:10px 22px;
+            width: auto;
+            height:auto;
+        }
+    </style>
+</head>
+<body>
+   <div class="container" style="width: 110%;text-align:center;">
+    <table width="100%">
+        <tr>
+            <td id="Logo"><img src="./logo.png" alt="LOGO"></td>
+            <td id="table"><h2>Shop Store</h2></td>
+            <td id="table">
+                <a class="navbar-link" href="#">Go to market</a>
+                <a class="navbar-link" href="#">Sign Up</a>
+                <a class="navbar-link" href="#">Basket</a>
+            </td>
+        </tr>
+        
+        <tr><td id="marque" colspan="5"><marquee>Last items: Airpods $20; Headphones $12; Telephones $150; Notepads $600; Cap $8;</marquee></td></tr>
+        <!-- <tr></tr> -->
+        <tr><td colspan="2"><img src="img/phone.jpeg" class="link-img" alt="telefon"></td>
+        <td colspan="2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, odit possimus! Id distinctio, maxime aliquid mollitia tempore eveniet vitae deleniti sit! Repellat dicta cumque exercitationem aliquam, quos ratione beatae facere.</td>
+        </tr>
+
+        <tr style="width:80%;border:2px solid black;">
+            <td><img src="img/phone.jpeg" class="link-img" alt="telefon"></td>
+            <td><img src="img/phone2.jpeg" class="link-img" alt="telefon"></td>
+            <td><img src="img/phone3.jpeg" class="link-img" alt="telefon"></td>
+            <td><img src="img/phone4.jpeg" class="link-img" alt="telefon"></td>
+        </tr>
+    </table>
+   </div>
+   <footer style="background-color:rgb(132, 160, 135);">
+       <!-- <table style="display:flex;justify-content:space-between;"   >
+           <tr>
+               <th>Biz haqimizda</th>
+               <th>Bizning manzil</th>
+               <th>Kirish</th>
+           </tr>
+           <tr>
+               <td>Biz O'zbekiston bo'ylab buyurtmalarni yetkazib beramiz</td>
+               <td>Google xarita </td>
+               <td>
+                   <form action="." method="POST">
+                       <label for="name" name="Your name">Name</label>
+                       <input id="name" placeholder="Your name.." name="Your name">
+                       <label for="email" name="Your Email">Your Email</label>
+                       <input id="email" placeholder="Email address" name="Email address">
+                       <label for="password" name="Password">Password</label>
+                       <input id="password" type="password" placeholder="Password.." name="Password">
+                       <label for="Submit">Sign In</label>
+                       <input type="button" id="Submit" name="submit">
+                   </form>
+               </td>
+           </tr>
+       </table> -->
+       <div class="row" style="display:flex;justify-content: space-evenly;">
+           <div class="card">
+               <h5>Biz haqimizda</h5>
+               <p>Biz O'zbekiston bo'ylab buyurtmalarni yetkazib beramiz</p>
+           </div>
+           <div class="card">
+               <h5>Bizning manzil</h5>
+               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95906.9291980045!2d69.18280667232625!3d41.30687222679229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef3cff7afe6d1%3A0x75da84fcb17abbe8!2z0JzQsNCz0LDQt9C40L0g0LHRi9GC0L7QstC-0Lkg0YLQtdGF0L3QuNC60LggIlRleG5vbWFydCIg0L3QsCDQrtC90YPRgdCw0LHQsNC0IDI!5e0!3m2!1suz!2s!4v1616739368304!5m2!1suz!2s" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+           </div>
+           <div class="card">
+               <h5>Kirish</h5>
+               <form action="." method="POST">
+                    <!-- <label for="name" name="Your name">Name</label> -->
+                    <input id="name" placeholder="Your name.." class="input-area" name="Your name"><br>
+                    <!-- <label for="email" name="Your Email">Your Email</label> -->
+                    <input id="email" placeholder="Email address" class="input-area" name="Email address"><br>
+                    <!-- <label for="password" name="Password">Password</label> -->
+                    <input id="password" type="password" class="input-area" placeholder="Password.." name="Password"><br>
+                    <!-- <label for="Submit">Sign In</label> -->
+                    <button type="submit" class="input-area" value="submit">Sign In</button><br>
+                </form>
+           </div>
+       </div>
+   </footer>
+</body>
+</html>
